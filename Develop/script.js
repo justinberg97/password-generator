@@ -1,19 +1,26 @@
-// Assignment code here
-
-
-// Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword() {
-  console.log("button has been pressed")
-  var length = 8,
-  charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
-  retVal = "";
-for (var i = 0, n = charset.length; i < length; ++i) {
-  retVal += charset.charAt(Math.floor(Math.random() * n));
-}
-return retVal;
-}
+  var generatePassword = function() {
+  var upperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+  var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
+  var specialCharacters = ["!@#$%^&*()"];
+  var numbers = ["0123456789"];
+  console.log("button has been pressed");
+  var length = 15;
+  var buttonpress = window.prompt("Please define number of characters (between 8-128) for your password")
+
+  if (buttonpress > 128 || buttonpress < 8){
+    window.alert("Please choose specified character amount")
+    return generatePassword
+  };
+
+var uppercaseConfirm = window.prompt("Would you like password to contain uppercase characters?");
+var lowercaseConfirm = window.prompt("Would you like password to include lowercase characters?");
+var specialcharactersConfirm = window.prompt("Would you like password to include special characters?");
+var numbersConfirm = window.prompt("Would you like password to include numbers:");
+
+  }
+
 
 // Write password to the #password input
 function writePassword() {
