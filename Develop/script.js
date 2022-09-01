@@ -5,8 +5,9 @@ var generateBtn = document.querySelector("#generate");
   var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
   var specialCharacters = ["!@#$%^&*()"];
   var numbers = ["0123456789"];
+
+  var randum = 0;
   console.log("button has been pressed");
-  var length = 15;
   var buttonpress = window.prompt("Please define number of characters (between 8-128) for your password")
 
   if (buttonpress > 128 || buttonpress < 8){
@@ -19,7 +20,27 @@ var lowercaseConfirm = window.prompt("Would you like password to include lowerca
 var specialcharactersConfirm = window.prompt("Would you like password to include special characters?");
 var numbersConfirm = window.prompt("Would you like password to include numbers:");
 
+var finalPassword = [];
+
+if(uppercaseConfirm) {
+  finalPassword =+ upperCase;
+}
+
+if(lowercaseConfirm) {
+  finalPassword =+ lowerCase;
+}
+
+if(specialcharactersConfirm) {
+  finalPassword =+ specialCharacters;
+}
+
+if(numbersConfirm) {
+  finalPassword =+ numbers;
+}
+
   }
+
+
 
 
 // Write password to the #password input
