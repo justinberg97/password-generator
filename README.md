@@ -21,3 +21,8 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 
+https://github.com/justinberg97/password-generator
+
+https://justinberg97.github.io/password-generator/
+
+<img width="1440" alt="Screen Shot 2022-09-03 at 2 27 13 AM" src="https://user-images.githubusercontent.com/110484382/188260715-0ee7c0a0-1756-4653-838b-dd467708fa63.png">
